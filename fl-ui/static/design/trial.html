@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Comment Classifier </title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/main.css" rel="stylesheet">
+
+</head>
+<style>
+    .host-banner:before {
+        background: rgb(228, 228, 228);
+    }
+
+    #search-btn {
+        background-color: #055791;
+        color: #fff;
+        font-weight: 600;
+        margin-left: 5px;
+        width: 110px;
+    }
+
+    #search-btn:hover {
+        background-color: #2a76ac;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-white navbar-white-inner navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 pull-left">
+                    <a class="custom_head animated fadein" href="#"><img src="static/img/logo.png" width="56" alt=""
+                            title="" /></a>
+                </div>
+                <h1 style="color: rgb(6,87,145);"> Comment Classifier </h1>
+            </div>
+        </div>
+    </nav>
+
+    <section class="host-banner">
+        <div class="container" style="background-color: white;">
+            <div class="row" style="background-color: white;">
+                <div class="col-md-12" style="background: white;">
+
+                    <div class="audio-track" style="border:1px solid white; width:100%">
+                        <div class="comment">
+                            <form action="/" method="POST">
+                                <h2 style="color: black;">Enter the comments</h2>
+                                <textarea type="text" placeholder="Enter json" name="comments" rows="10"
+                                    cols="50"> </textarea>
+                                <br><br>
+                                <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn">Download</button>
+
+                                <h2 style="color: black;">Result</h2>
+
+                                <textarea type="text" value="comment" placeholder="comments" rows="10" cols="50">
+                            {{ result }}
+                                  </textarea>
+                                <br><br>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+    <footer class="footer inner animated fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center copy">
+                    <p>Copyright 2017 TalentAccurate.com, Inc. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //carousel options
+            $('#quote-carousel').carousel({
+                pause: true,
+                interval: 10000,
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Classifier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" /> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+
+        h1{
+            text-align: center;
+        }
+        .comment{
+            padding-top: 5rem;
+            text-align: center;
+        }
+        
+
+/* CSS */
+.button-22 {
+  align-items: center;
+  appearance: button;
+  background-color: #0276FF;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-22:active {
+  background-color: #006AE8;
+}
+
+.button-22:hover {
+  background-color: #1C84FF;
+}
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-white navbar-white-inner navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 pull-left">
+                <a class="custom_head animated fadein" href="#"><img src="static/img/logo.png" width="56" alt=""
+                        title="" /></a>
+                        <h2 style="float:right;">Comment Classification</h2>
+            </div>
+        </div>
+    </div>
+</nav>
+<br><br><br><br>
+<hr class="rounded" style="border-top: 8px solid #055791;border-radius: 5px;">
+
+    <div class="comment">
+      <form action="/" method="POST">
+            <h2><label for="comment" style="text-align: center;">Enter the comments </label></h2><br><br>
+            <textarea type="text"  placeholder="Enter json" name="comments" rows="10" cols="50"> </textarea>
+            <br><br><br>
+            <button type="submit" class="button-22" style="background-color:#055791; color: white;margin-left: 53rem;">SUBMIT</button>
+            <br><br><br>
+            <h2><p>Result</p></h2>
+            <br><br>
+            <textarea type="text" value = "comment" placeholder="comments" rows="10" cols="50">
+      {{ result }}
+            </textarea>
+            <br><br>
+        </form>
+    </div>
+
+</body>
+</html>
+  
+
+  </body>
+  </html>
